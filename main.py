@@ -81,8 +81,74 @@ def fun10():
 
 #11
 def fun11(): 
- dic={"라면":1000,"과자":800,"음료":1500}
- num=int(input(라면, 과자, 음료의 구매 개수를 입력해주세요 : ))
- print(dic*num)
+ ramyeon,snack,drink=input("라면, 과자, 음료의 구매 개수를 입력해주세요 : ").split(",")
+ total=int(ramyeon)*1000+int(snack)*800+int(drink)*1500
+ print("총 금액은 %s 원 입니다." % total)
 
-fun1()
+#12
+def fun12():
+ print(5%3)
+
+#13
+def fun13():
+#num1=num1+3
+ num1=0
+ num1+= 3
+ print(num1)
+
+#14
+def fun14():
+ a=int(input("첫 번째 수 : "))
+ b=int(input("두 번째 수 : "))
+ print("더하기: ",a+b)
+ print("빼기: ",a-b)
+ print("곱하기: ",a*b)
+ print("나누기: ",a/b)
+ print("몫: ",a//b)
+ print("나누기: ",a%b)
+ print("제곱: ",a**b)
+
+#15
+def fun15():
+ mylist=[65,80,55]
+ print(mylist)
+
+#16
+def fun16():
+ mylist=[65,80,55]
+ print(mylist[1])
+
+#17
+def fun17():
+ mylist=[65,80,55]
+ mylist.append(100)
+ print(mylist)
+
+#18
+def fun18():
+ mylist=[65,80,55,100]
+ mylist[3]=90
+ print(mylist)
+
+#19
+def fun19():
+ mylist=[65,80,55,90]
+ mylist.sort()
+ print(mylist)
+ mylist.sort(reverse=True)
+ print(mylist)
+
+#20
+def fun20():
+ mylist=[65,80,55,90]
+ mylist.insert(2,30)
+ print(mylist)
+
+#21
+def fun21():
+ mylist=[90,80,30,65,55]
+ print(mylist[-1])
+ mylist.pop()
+ print(mylist)
+
+fun21()
