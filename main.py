@@ -177,7 +177,30 @@ def fun25():
 #26
 def fun26():
  mylist=[90, 80, 30, 65, 30, 30, 100]
- del(mylist[3])
+ index_65=mylist.index(65)
+ del(mylist[index_65])
+ print(mylist)
 
-fun26()
+#27
+def fun27():
+ t1=(1,2,3)
+ print(t1)
+
+#28
+def fun28():
+ t1=(1,2,3)
+ print(t1[:2])
+
+#29
+def fun29():
+ t1=(30,)
+ print(t1)
+
+#30
+def fun30():
+ t1=(1,2)
+ t2=("a","b")
+ print(t1+t2)
+
+fun30()
  
