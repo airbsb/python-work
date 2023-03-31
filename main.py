@@ -151,4 +151,33 @@ def fun21():
  mylist.pop()
  print(mylist)
 
-fun21()
+#22
+def fun22():
+ mylist=[90,80,30,65]
+ print(mylist.index(30))
+
+#23
+def fun23():
+ mylist=[90,80,30,65]
+ mylist2=[30,30,100]
+ mylist=mylist+mylist2
+ print(mylist)
+
+#24
+def fun24():
+ mylist=[90, 80, 30, 65, 30, 30, 100]
+ print(mylist.count(30))
+
+#25
+def fun25():
+ mylist=[90, 80, 30, 65, 30, 30, 100]
+ mylist.remove(30)
+ print(mylist)
+
+#26
+def fun26():
+ mylist=[90, 80, 30, 65, 30, 30, 100]
+ del(mylist[3])
+
+fun26()
+ 
