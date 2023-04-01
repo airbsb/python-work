@@ -10,7 +10,7 @@ def fun2():
 #3
 def fun3():
  str="Hello"
- lag=True
+ flag=True
  age=20
  score=[70,80,90] 
  student={"name":"JW","age":24}
@@ -202,5 +202,105 @@ def fun30():
  t2=("a","b")
  print(t1+t2)
 
-fun30()
+#31
+def fun31():
+ t1=(1,2)
+ print(t1*5)
+
+#32
+def fun32():
+ dic={"name":"차혜진","age":22,"stdNum":202345050}
+ print(dic)
+
+#33
+ dic["grade"]=1
+ print(dic)
+
+#34
+ print(dic["name"])
+
+#35
+ print(dic.keys())
+
+#36
+ print(dic.values())
+
+#37
+ print(dic.items())
+
+#38
+ print("name" in dic)
+ print("class" in dic)
+
+#39
+ del dic["grade"]
+ print(dic)
+
+#40
+ dic.clear()
+ print(dic)
+
+#41
+def fun41():
+ a, b = input("두 수를 입력하세요.").split(" ")
+ a=int(a)
+ b=int(b)
+ if(a>b):print(a)
+ else:print(b)
+
+#42
+def fun42():
+ num=int(input("20보다 작은 수를 입력하세요."))
+ if (num>=20) : print("Too High")
+ else : print("Thank you")
+
+#43
+def fun43():
+ color=input("좋아하는 색을 입력하세요 : ")
+ if(color.lower()=="red"):print("I like red too")
+ else:print("I don't like that color, I prefer red")
+
+#44
+def fun44():
+ mylist=[1,2,3,4,5]
+ print(mylist)
+
+#45
+def fun45():
+ total=0
+ for i in range(1,11) : total+=i
+ print(total)
+
+#46
+def fun46():
+ lastnum=int(input("수를 입력해주세요."))
+ total=0
+ for i in range(1,lastnum+1) : total+=i
+ print(total)
+
+#47
+def fun47():
+ mylist=[]
+ mylist=input("10가지 수를 입력해주세요.").split(",")
+
+ for i in range(0,len(mylist)) : mylist[i]=int(mylist[i])
+
+ mylist.sort(reverse=True)
+ print("최대값 : ",mylist[0])
+ print("최소값 : ",mylist[-1])
+
+#48
+def fun48():
+ for i in range(1,6):
+  print("*"*i)
+  
+#49
+def fun49():
+ a=input("python 을 입력하세요.")
+ while a != "python":
+  print("python 을 입력하세요.")
+ print("good!")
+
+
+fun49()
  
